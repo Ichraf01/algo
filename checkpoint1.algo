@@ -1,0 +1,23 @@
+ALGORITHM checkpointone
+VAR
+    x : CHAR
+    nb_voy: INTEGER := 0
+    nb_esp: INTEGER := 0
+    nb-char: INTEGER := 0
+BEGIN
+    WHILE (x <>" .") DO
+        
+        nb_char := nb_char + 1
+
+      IF (x ="a" AND x ="e" AND x ="i" AND x ="o" AND x ="u" AND x ="y") THEN
+        nb_voy := nb_voy + 1
+       
+      END_IF  
+
+      IF (x = " ") THEN
+        nb_esp := nb_esp + 1
+        
+      END_IF
+ write (nb_voy,nb_esp,nb-char)
+    END_WHILE
+END
